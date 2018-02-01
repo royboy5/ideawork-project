@@ -13,7 +13,7 @@ const App = () => (
   <Router>
     <React.Fragment>
       <Header />
-
+      <Route exact path='/' component={Home} />
       <Footer />
     </React.Fragment>
   </Router>
