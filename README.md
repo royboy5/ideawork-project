@@ -19,3 +19,9 @@ $  npm run build
 ```
 The production build will compile all source code and put everything in the 'build' directory.  The files in the build directory needs to be served in a web server.
 
+## Demo
+
+[Github Pages](https://royboy5.github.io/ideawork-project/)
+
+[Heroku](https://royboy-ideawork.herokuapp.com/)
+
