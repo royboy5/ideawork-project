@@ -1,14 +1,6 @@
-@import "typography";
-
-body {
-  font-family: Springville, Helvetica, sans-serif;
-}
-
-header {
-  padding: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
+@import "fonts";
+@import "variables";
+@import "layout";
+@import "content";
+@import "sections/header";
+@import "sections/nav";

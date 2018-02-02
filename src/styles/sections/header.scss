@@ -1,0 +1,96 @@
+/*
+ * Header specific Styles
+ */
+
+header {
+  font-size: .69rem;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .info {
+  padding-right: 30px;
+}
+
+#menuToggle
+{
+  position: relative;
+  top: 7px;
+  z-index: 1;
+}
+
+#menuToggle input
+{
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: $primaryText;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ label span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-5px, -13px);
+  background: #232323;
+}
+
+/*
+ * Middle Bar
+ */
+#menuToggle input:checked ~ label span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Top Bar
+ */
+#menuToggle input:checked ~ label span:nth-last-child(3)
+{
+  transform: rotate(-45deg) translate(-5px, 12px);
+}

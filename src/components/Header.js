@@ -1,23 +1,28 @@
 import React, { Component } from 'react'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 
 import logo from '../images/logo.png'
+import Navigation from './Navigation'
 
 class Header extends Component {
-  constructor (props) {
-    super(props)
-    this.handleBarClick = this.handleBarClick.bind(this)
-  }
-  handleBarClick (e) {
-    console.log('bar clicked')
-  }
-
   render () {
     return (
       <header className='container'>
         <img src={logo} alt={'Sparta Plaesent'} />
-        <FontAwesomeIcon icon={faBars} size={'2x'}onClick={this.handleBarClick} />
+        <div>
+          <span className='info'>212.555.5555</span>
+          <a className='info' href='#'>Login</a>
+
+          <div id='menuToggle'>
+            <input type='checkbox' id='checkbox' />
+            <label htmlFor='checkbox'>
+              <span />
+              <span />
+              <span />
+            </label>
+            <Navigation />
+          </div>
+
+        </div>
       </header>
     )
   }
