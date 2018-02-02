@@ -1,0 +1,17 @@
+/*
+ * Grid styles
+ */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.grid-item {
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid black;
+  width: 350px;
+  height: auto;
+}

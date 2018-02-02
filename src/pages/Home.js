@@ -9,7 +9,7 @@ class Home extends Component {
     console.log(this.props.gridItems)
     return (
       <React.Fragment>
-        <Rotator />
+        <Rotator slides={this.props.rotator} />
         <GridList gridItems={this.props.gridItems} />
       </React.Fragment>
     )
@@ -17,7 +17,8 @@ class Home extends Component {
 }
 
 Home.propTypes = {
-  gridItems: PropTypes.array.isRequired
+  gridItems: PropTypes.array.isRequired,
+  rotator: PropTypes.object.isRequired
 }
 
 export default Home
