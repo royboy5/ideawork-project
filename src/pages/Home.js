@@ -1,25 +1,23 @@
 import React, {Component} from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import Rotator from './home/Rotator'
-import FlexBox from './home/FlexBox'
+import GridList from './home/GridList'
 
 class Home extends Component {
   render () {
+    console.log(this.props.gridItems)
     return (
-      <div>
+      <React.Fragment>
         <Rotator />
-        <FlexBox />
-        <FlexBox />
-        <FlexBox />
-        <FlexBox />
-        <FlexBox />
-        <FlexBox />
-      </div>
+        <GridList gridItems={this.props.gridItems} />
+      </React.Fragment>
     )
   }
 }
 
-// Home.propTypes = {}
+Home.propTypes = {
+  gridItems: PropTypes.array.isRequired
+}
 
 export default Home

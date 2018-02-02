@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
-      This is the footer
+    <footer className='container'>
+      © 2017 — SPARTA PLAESENT - <a href='#'>instagram</a> - <a href='#'>facebook</a> - <a href='#'>twitter</a>
     </footer>
   )
 }
