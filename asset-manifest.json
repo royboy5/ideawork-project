@@ -1,6 +1,12 @@
 {
-  "main.js": "static/js/main.dff41e9c.js",
-  "main.js.map": "static/js/main.dff41e9c.js.map",
+  "main.js": "static/js/main.e8e2c9f7.js",
+  "main.js.map": "static/js/main.e8e2c9f7.js.map",
   "static\\media\\ACaslonPro-Regular.otf": "static/media/ACaslonPro-Regular.07c51e08.otf",
-  "static\\media\\Springville-Regular3.otf": "static/media/Springville-Regular3.47a715e6.otf"
+  "static\\media\\Springville-Regular3.otf": "static/media/Springville-Regular3.47a715e6.otf",
+  "static\\media\\ev1.png": "static/media/ev1.0d1c14d0.png",
+  "static\\media\\ev2.png": "static/media/ev2.6171cc0a.png",
+  "static\\media\\ev3.png": "static/media/ev3.4aa825ae.png",
+  "static\\media\\ev4.png": "static/media/ev4.8ac6f2ff.png",
+  "static\\media\\ev5.png": "static/media/ev5.d660aeee.png",
+  "static\\media\\ev6.png": "static/media/ev6.836468f5.png"
 }
