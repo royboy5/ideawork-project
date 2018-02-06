@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const GridBox = (props) => {
   return (
-    <article className='grid-item'>
+    <article className='grid-item' key={props.gridItem.key}>
       <img src={props.gridItem.img} alt={'props.gridItems.title'} />
       <div>{props.gridItem.date}</div>
       <h1>{props.gridItem.title}</h1>

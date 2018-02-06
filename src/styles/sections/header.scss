@@ -1,8 +1,15 @@
 /*
  * Header specific Styles
  */
+header.fixed-header {
+  width: 100%;
+  position: fixed;
+  padding: 10px 0;
+  color: #fff;
+  z-index:100000;
+}
 
-header {
+header > div {
   font-size: .69rem;
   padding: 25px 0;
   display: flex;
@@ -11,7 +18,7 @@ header {
   align-content: center;
 }
 
-header > div {
+header > div > div {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -6,8 +6,8 @@ import GridBox from './GridBox'
 const GridList = props => {
   return (
     <article className='grid container'>
-      {props.gridItems.map(item => {
-        return <GridBox gridItem={item} key={item.title} />
+      {props.gridItems.map((item, key) => {
+        return <GridBox gridItem={item} key={key} />
       })}
     </article>
   )

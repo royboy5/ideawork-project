@@ -18,7 +18,7 @@ class Home extends Component {
 
 Home.propTypes = {
   gridItems: PropTypes.array.isRequired,
-  rotator: PropTypes.object.isRequired
+  rotator: PropTypes.array.isRequired
 }
 
 export default Home

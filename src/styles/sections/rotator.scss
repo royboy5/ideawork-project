@@ -1,10 +1,58 @@
 /*
  * Rotator Styles
  */
-#rotator {
-  margin-bottom: 2rem;
+div.rotator {
+  position: relative;
+  margin-bottom: 10rem;
+  top: 120px;
+  overflow: hidden;
 }
 
-#rotator img {
-  width: 100%;
+div.rotator .control-dots {
+  position: relative;
+}
+
+div.rotator .control-dots .dot {
+  background-color: #f0f0f0;
+  opacity: 1;
+}
+
+div.rotator .control-dots .dot.selected,
+div.rotator .control-dots .dot:hover {
+  background-color: #e1e1e1;
+  opacity: 1;
+}
+
+div.rotator li.slide div.legend {
+  font-family: Springville;
+  max-width: 1440px;
+  background: none;
+  opacity: 1;
+  text-align: left;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+div.rotator li.slide div.legend h1 {
+  white-space: pre-line;
+  font-size: 3.75rem;
+}
+
+div.rotator li.slide div.legend h2 {
+  font-family: Adobe-Caslon-Pro;
+  font-weight: normal;
+  font-size: 1.9rem;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.rotator li.slide div.legend p {
+  font-family: Adobe-Caslon-Pro;
+  font-weight: normal;
+  font-size: 1.15rem;
+  max-width: 40%;
 }

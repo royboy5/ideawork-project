@@ -15,7 +15,8 @@ import ev3 from './images/ev3.png'
 import ev4 from './images/ev4.png'
 import ev5 from './images/ev5.png'
 import ev6 from './images/ev6.png'
-import slide1 from './images/slide.png'
+import slide1 from './images/slide1.png'
+import slide2 from './images/slide2.png'
 
 //  Since github pages is a static server, we need to use HashRouter
 const Router = window.location.host.includes('github') ? HashRouter : BrowserRouter
@@ -59,9 +60,20 @@ const items = [
   }
 ]
 
-const slides = {
-  slide: slide1
-}
+const slides = [
+  {
+    image: slide1,
+    title: 'Screening: \n DVF Secret Agent Part 2',
+    date: 'October 15, 2017',
+    text: 'Join us for a private screening of the DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.'
+  },
+  {
+    image: slide2,
+    title: 'Screening: \n DVF Secret Agent Part 2',
+    date: 'October 15, 2017',
+    text: 'Join us for a private screening of the DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.'
+  }
+]
 
 const App = () => (
   <Router>
