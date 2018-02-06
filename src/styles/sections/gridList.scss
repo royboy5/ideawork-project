@@ -1,18 +1,19 @@
 /*
  * Grid styles
  */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+.grid-sizer,
+.grid-item {
+  width: 350px;
+}
+
+.gutter-sizer {
+  width: 2%;
 }
 
 .grid-item {
-  align-self: flex-start;
+  //align-self: flex-start;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
   border-bottom: 1px solid black;
-  width: 350px;
-  height: auto;
 }
+

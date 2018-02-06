@@ -50,20 +50,20 @@ export const items = [
 export const slides = [
   {
     image: slide1,
-    title: 'Screening: \n DVF Secret Agent Part 2',
+    title: 'Screening: \n DVF Secret Agent Part 1',
     date: 'October 15, 2017',
-    text: 'Join us for a private screening of the DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.'
+    text: 'Join us for a private screening of the DVF Secret Agent Part 1 with our special guest, director Peter Lindberg.'
   },
   {
     image: slide2,
     title: 'Screening: \n DVF Secret Agent Part 2',
-    date: 'October 15, 2017',
+    date: 'October 16, 2017',
     text: 'Join us for a private screening of the DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.'
   },
   {
     image: slide3,
-    title: 'Screening: \n DVF Secret Agent Part 2',
-    date: 'October 15, 2017',
-    text: 'Join us for a private screening of the DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.'
+    title: 'Screening: \n DVF Secret Agent Part 3',
+    date: 'October 17, 2017',
+    text: 'Join us for a private screening of the DVF Secret Agent Part 3 with our special guest, director Peter Lindberg.'
   }
 ]
