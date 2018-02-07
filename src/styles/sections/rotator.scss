@@ -10,6 +10,12 @@ div.rotator {
   max-width: 1440px;
 }
 
+div.rotator div.img {
+  min-height: 579px;
+  background-size: cover;
+  background-position: center;
+}
+
 div.rotator .control-dots {
   position: relative;
 }

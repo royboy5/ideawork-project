@@ -20,8 +20,7 @@ class Rotator extends Component {
 
   renderSlides (slide, key) {
     return (
-      <div key={key}>
-        <img src={slide.image} alt={slide.title} />
+      <div className='img' key={key} style={{ backgroundImage: `url(${slide.image})` }}>
         <div className='legend'>
           <h1>{slide.title}</h1>
           <h2>{slide.date}</h2>
