@@ -11,10 +11,10 @@ a
   text-transform: uppercase;
   color: $secondaryText;
   transition: color 0.3s ease;
-}
 
-a:hover
-{
-  color: $linkHover;
-  text-decoration: none;
+  &:hover
+  {
+    color: $linkHover;
+    text-decoration: none;
+  }
 }

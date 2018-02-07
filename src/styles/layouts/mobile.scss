@@ -2,99 +2,99 @@
  * Mobile Styles
  */
 @media all and (max-width: $mobile-break) {
-  header.fixed-header {
-    height: 50px;
-    padding: 0;
-  }
+  header {
+    &.fixed-header {
+      height: 50px;
+      padding: 0;
+    }
 
-  header > div {
-    height: 50px;
-  }
+    div.container {
+      height: 50px;
+    }
 
-  header img {
-    width: 150px;
-  }
+    img {
+      width: 150px;
+    }
 
-  header a.info {
-    display: none;
-  }
+    a.info {
+      display: none;
+    }
 
-  div.container > div .info {
-    padding: 0 10px;
+    span.info {
+      padding: 0 10px;
+    }
   }
 
   div.rotator {
     top: 50px;
     margin-bottom: 5rem;
     height: auto;
-  }
 
-
-  div.rotator div.img {
-    min-width: 320px;
-    min-height: 240px;
+    div.img {
+      min-width: 320px;
+      min-height: 240px;
+    }
   }
 
   .grid-item {
     max-width: 290px;
-  }
 
-  .grid-item .grid-item-img {
-    max-width: 100%;
+    img.grid-item-img {
+      max-width: 100%;
+    }
+    a.grid-item-title {
+      font-size: 2rem;
+    }
   }
-
-  .grid-item .grid-item-title {
-    font-size: 2rem;
-  }
-
 }
 
 @media all and (max-width: 400px) {
-  div.rotator li.slide div.legend h1 {
-    margin: 0 0 5px 0;
-    font-size: 1.5rem;
-  }
+  div.rotator li.slide div.legend {
+    h1 {
+      margin: 0 0 5px 0;
+      font-size: 1.5rem;
+    }
 
-  div.rotator li.slide div.legend h2 {
-    font-size: 1rem;
-    margin: 0 0 5px 0;
-  }
+    h2 {
+      font-size: 1rem;
+      margin: 0 0 5px 0;
+    }
 
-  div.rotator li.slide div.legend p {
-    font-size: .6rem;
+    p {
+      font-size: .6rem;
+    }
   }
 }
 
 @media all and (min-width: $mobile-min) and (max-width: $mobile-max) {
-  header.fixed-header {
-    height: 50px;
-    padding: 0;
-  }
 
-  header > div {
-    height: 50px;
-  }
+  header {
+    &.fixed-header {
+      height: 50px;
+      padding: 0;
+    }
 
-  header img {
-    width: 150px;
-  }
+    div.container {
+      height: 50px;
+    }
 
-  header a.info {
-    display: none;
-  }
+    img {
+      width: 150px;
+    }
 
-  div.container > div .info {
-    padding: 0 10px;
+    a.info {
+      display: none;
+    }
+
+    span.info {
+      padding: 0 10px;
+    }
   }
 
   div.rotator {
     top: 50px;
     margin-bottom: 5rem;
     height: auto;
-  }
-
-  header a.info {
-    display: none;
   }
 
   .grid-item {
@@ -102,14 +102,14 @@
     left: 50%!important;
     margin-right: -50%;
     transform: translate(-50%, 0%);
-  }
 
-  .grid-item .grid-item-img {
-    max-width: 100%;
-  }
+    img.grid-item-img {
+      max-width: 100%;
+    }
 
-  .grid-item .grid-item-title {
-    font-size: 2rem;
+    a.grid-item-title {
+      font-size: 2rem;
+    }
   }
 }
 

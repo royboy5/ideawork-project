@@ -7,10 +7,11 @@ footer {
   text-align: center;
   font-weight: bold;
   padding: 10rem 0 5rem 0;
+
+  a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
 
-footer a {
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
