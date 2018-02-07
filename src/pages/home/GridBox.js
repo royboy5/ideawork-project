@@ -9,7 +9,7 @@ const GridBox = (props) => {
       <a className={'grid-item-title'} href={'#'}>{props.gridItem.title}</a>
       <div className={'grid-item-by'}>Present by <a href={'#'}>{props.gridItem.presentedBy}</a></div>
       <hr />
-      <div className={'grid-item-readme'}><a href='#'>Read Me</a></div>
+      <div className={'grid-item-readme'}><a href='#'>Read More</a></div>
     </figure>
   )
 }
