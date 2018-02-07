@@ -50,6 +50,14 @@ header {
       z-index: 2; /* and place it over the hamburger */
       -webkit-touch-callout: none;
     }
+
+    /*
+     * Menu Slide from the right
+     */
+    input:checked ~ ul {
+      transform: none;
+    }
+
     /*
      * Hamburger
      */
