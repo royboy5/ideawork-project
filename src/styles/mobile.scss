@@ -1,7 +1,7 @@
 /*
  * Mobile Sytles
  */
-@media screen and (max-width: $mobile-break) {
+@media all and (max-width: $mobile-break) {
   header.fixed-header {
     height: 50px;
     padding: 0;
@@ -40,4 +40,21 @@
     font-size: 2rem;
   }
 
+}
+
+@media all and (min-width: 321px) and (max-width: 767px) {
+  .grid-item {
+    margin: 0;
+    left: 50%!important;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+  }
+
+  header a.info {
+    display: none;
+  }
+
+  .grid-item .grid-item-title {
+    font-size: 2rem;
+  }
 }
