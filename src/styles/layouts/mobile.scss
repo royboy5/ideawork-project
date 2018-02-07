@@ -22,6 +22,7 @@
   div.container > div .info {
     padding: 0 10px;
   }
+
   div.rotator {
     top: 50px;
     margin-bottom: 5rem;
@@ -32,7 +33,7 @@
     max-width: 290px;
   }
 
-  .grid-item > img {
+  .grid-item .grid-item-img {
     max-width: 100%;
   }
 
@@ -43,15 +44,46 @@
 }
 
 @media all and (min-width: $mobile-min) and (max-width: $mobile-max) {
+  header.fixed-header {
+    height: 50px;
+    padding: 0;
+  }
+
+  header > div {
+    height: 50px;
+  }
+
+  header img {
+    width: 150px;
+  }
+
+  header a.info {
+    display: none;
+  }
+
+  div.container > div .info {
+    padding: 0 10px;
+  }
+
+  div.rotator {
+    top: 50px;
+    margin-bottom: 5rem;
+    height: auto;
+  }
+
+  header a.info {
+    display: none;
+  }
+
   .grid-item {
-    margin: 0;
+    max-width: 290px;
     left: 50%!important;
     margin-right: -50%;
     transform: translate(-50%, 0%);
   }
 
-  header a.info {
-    display: none;
+  .grid-item .grid-item-img {
+    max-width: 100%;
   }
 
   .grid-item .grid-item-title {
