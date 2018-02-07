@@ -29,6 +29,30 @@
     height: auto;
   }
 
+
+  div.rotator div.img {
+    min-width: 320px;
+    min-height: 240px;
+  }
+
+  div.rotator li.slide div.legend {
+    top: 40%;
+  }
+
+  div.rotator li.slide div.legend h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+  }
+
+  div.rotator li.slide div.legend h2 {
+    font-size: 1rem;
+    margin: 0 0 5px 0;
+  }
+
+  div.rotator li.slide div.legend p {
+    font-size: .6rem;
+  }
+
   .grid-item {
     max-width: 290px;
   }
@@ -90,3 +114,4 @@
     font-size: 2rem;
   }
 }
+

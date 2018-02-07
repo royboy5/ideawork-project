@@ -12,15 +12,21 @@ class Rotator extends Component {
 
     this.state = {
       slides: this.props.slides,
-      currentSlide: 0
+      imgHeight: 240
     }
 
     this.renderSlides = this.renderSlides.bind(this)
+    this.calcImgHeight = this.calcImgHeight.bind(this)
   }
 
   renderSlides (slide, key) {
+    const styles = {
+      backgroundImage: `url(${slide.image})`,
+      minHeight: this.state.imgHeight
+    }
+
     return (
-      <div className='img' key={key} style={{ backgroundImage: `url(${slide.image})` }}>
+      <div className='img' key={key} style={styles}>
         <div className='legend'>
           <h1>{slide.title}</h1>
           <h2>{slide.date}</h2>
@@ -28,6 +34,31 @@ class Rotator extends Component {
         </div>
       </div>
     )
+  }
+
+  // calculations to maintain 4:3 img ratio
+  calcImgHeight () {
+    let height = 240
+
+    if (window.innerWidth > 320 && window.innerWidth < 772) {
+      height = (3 * window.innerWidth) / 4
+    } else if (window.innerWidth >= 772) {
+      height = 579
+    }
+
+    console.log(window.innerWidth)
+    this.setState({
+      imgHeight: height
+    })
+  }
+
+  componentDidMount () {
+    this.calcImgHeight()
+    window.addEventListener('resize', this.calcImgHeight)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.calcImgHeight)
   }
 
   render () {
@@ -39,7 +70,7 @@ class Rotator extends Component {
         emulateTouch
         showArrows={false}
         showStatus={false}
-        autoPlay
+        autoPlay={false}
         infiniteLoop={false}>
 
         {this.state.slides.map((slide, key) => {

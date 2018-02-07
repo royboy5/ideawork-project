@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {HashRouter, BrowserRouter, Route} from 'react-router-dom'
 
+import './utils/polyfill'
+
 import './styles/styles.scss'
 import registerServiceWorker from './registerServiceWorker'
 
