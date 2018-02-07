@@ -70,8 +70,8 @@ class Rotator extends Component {
         emulateTouch
         showArrows={false}
         showStatus={false}
-        autoPlay={false}
-        infiniteLoop={false}>
+        autoPlay
+        infiniteLoop>
 
         {this.state.slides.map((slide, key) => {
           return this.renderSlides(slide, key)
