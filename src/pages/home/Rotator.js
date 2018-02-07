@@ -47,6 +47,7 @@ class Rotator extends Component {
     }
 
     this.setState({
+      ...this.state,
       imgHeight: height
     })
   }
