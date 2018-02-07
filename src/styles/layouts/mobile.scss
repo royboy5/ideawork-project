@@ -1,5 +1,5 @@
 /*
- * Mobile Sytles
+ * Mobile Styles
  */
 @media all and (max-width: $mobile-break) {
   header.fixed-header {
@@ -42,7 +42,7 @@
 
 }
 
-@media all and (min-width: 321px) and (max-width: 767px) {
+@media all and (min-width: $mobile-min) and (max-width: $mobile-max) {
   .grid-item {
     margin: 0;
     left: 50%!important;

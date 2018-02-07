@@ -34,9 +34,7 @@
   }
 }
 
-.grid-item .grid-item-title:hover,
-.grid-item:hover > img,
-.grid-item:hover > a:nth-of-type(1) {
+.grid-item:hover > a:nth-of-type(2) {
   text-decoration: underline;
   cursor: pointer;
 }

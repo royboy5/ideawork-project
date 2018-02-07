@@ -1,10 +1,11 @@
 @import "fonts";
 @import "variables";
-@import "layout";
+@import "layouts/base";
 @import "content";
 @import "sections/header";
 @import "sections/nav";
 @import "sections/rotator";
-@import "sections/gridList";
+@import "sections/grid";
 @import "sections/footer";
-@import "mobile"
+@import "layouts/tablet";
+@import "layouts/mobile";

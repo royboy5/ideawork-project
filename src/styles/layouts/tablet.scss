@@ -1,0 +1,35 @@
+/*
+ * Tablet Styles
+ */
+@media all and (min-width: $tablet-min) and (max-width: 991px) {
+
+  .grid-sizer,
+  .grid-item {
+    width: 300px;
+    margin-left: 5%;
+  }
+
+  .grid-item img {
+    max-width: 300px;
+  }
+
+  .grid-item .grid-item-title {
+    font-size: 2rem;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: $tablet-max) {
+  .grid-sizer,
+  .grid-item {
+    width: 320px;
+    margin: 0 7%;
+  }
+
+  .grid-item img {
+    max-width: 320px;
+  }
+
+  .grid-item .grid-item-title {
+    font-size: 2rem;
+  }
+}

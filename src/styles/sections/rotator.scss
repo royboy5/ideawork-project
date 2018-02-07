@@ -7,6 +7,10 @@ div.rotator {
   top: 105px;
   overflow: hidden;
 }
+div.rotator .slide div {
+  width: 500px;
+  height: 500px;
+}
 
 div.rotator .control-dots {
   position: relative;
