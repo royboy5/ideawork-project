@@ -6,7 +6,6 @@ import Grid from './home/Grid'
 
 class Home extends Component {
   render () {
-    console.log(this.props.gridItems)
     return (
       <React.Fragment>
         <Rotator slides={this.props.rotator} />

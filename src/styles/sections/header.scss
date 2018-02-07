@@ -32,6 +32,10 @@ header .info {
   color: $secondaryText;
 }
 
+header a.info:hover {
+  color: $linkHover;
+}
+
 #menuToggle
 {
   position: relative;

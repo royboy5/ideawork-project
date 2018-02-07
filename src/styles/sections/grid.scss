@@ -10,7 +10,9 @@
   width: 2%;
 }
 
-.grid-item > img {
+.grid-item,
+.grid-item > a {
+  display: block;
   margin-bottom: 2rem;
 }
 
@@ -38,10 +40,10 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
 .grid-item:hover .grid-item-readme {
   opacity: 1;
 }
-
 
 .grid-item .grid-item-by {
   font-size: .7rem;
@@ -49,6 +51,7 @@
 }
 
 .grid-item .grid-item-readme {
+  display: none;
   opacity: 0;
   background-color: #fff;
   position: absolute;

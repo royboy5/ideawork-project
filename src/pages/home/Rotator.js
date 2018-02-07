@@ -46,7 +46,6 @@ class Rotator extends Component {
       height = 579
     }
 
-    console.log(window.innerWidth)
     this.setState({
       imgHeight: height
     })
@@ -62,7 +61,6 @@ class Rotator extends Component {
   }
 
   render () {
-    console.log(this.state.slides)
     return (
       <Carousel
         className='rotator'

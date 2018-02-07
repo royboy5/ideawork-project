@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-$  git clone https://github.com/royboy5/ideawork-project.get
+$  git clone https://github.com/royboy5/ideawork-project.git
 $  cd ideawork-project
 $  npm i
 ```
