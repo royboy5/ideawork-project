@@ -1,6 +1,21 @@
 /*
  * Tablet Styles
  */
+@media all and (min-width: 401px) and (max-width: $tablet-min) {
+  div.rotator li.slide div.legend h1 {
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+  }
+
+  div.rotator li.slide div.legend h2 {
+    font-size: 1.25rem;
+    margin: 0 0 5px 0;
+  }
+
+  div.rotator li.slide div.legend p {
+    font-size: .8rem;
+  }
+}
 @media all and (min-width: $tablet-min) and (max-width: 991px) {
 
   .grid-sizer,

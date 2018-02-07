@@ -35,10 +35,21 @@
     min-height: 240px;
   }
 
-  div.rotator li.slide div.legend {
-    top: 40%;
+  .grid-item {
+    max-width: 290px;
   }
 
+  .grid-item .grid-item-img {
+    max-width: 100%;
+  }
+
+  .grid-item .grid-item-title {
+    font-size: 2rem;
+  }
+
+}
+
+@media all and (max-width: 400px) {
   div.rotator li.slide div.legend h1 {
     margin: 0 0 5px 0;
     font-size: 1.5rem;
@@ -52,19 +63,6 @@
   div.rotator li.slide div.legend p {
     font-size: .6rem;
   }
-
-  .grid-item {
-    max-width: 290px;
-  }
-
-  .grid-item .grid-item-img {
-    max-width: 100%;
-  }
-
-  .grid-item .grid-item-title {
-    font-size: 2rem;
-  }
-
 }
 
 @media all and (min-width: $mobile-min) and (max-width: $mobile-max) {
