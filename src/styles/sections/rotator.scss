@@ -3,13 +3,11 @@
  */
 div.rotator {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 10rem;
   top: 105px;
   overflow: hidden;
-}
-div.rotator .slide div {
-  width: 500px;
-  height: 500px;
+  max-width: 1440px;
 }
 
 div.rotator .control-dots {
