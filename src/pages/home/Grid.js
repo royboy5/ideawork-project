@@ -2,9 +2,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import GridBox from './GridBox'
+import GridItem from './GridItem'
 
-class GridList extends Component {
+class Grid extends Component {
   constructor (props) {
     super(props)
 
@@ -44,15 +44,15 @@ class GridList extends Component {
         <div className='grid-sizer' />
         <div className='gutter-sizer' />
         {this.props.gridItems.map((item, key) => {
-          return <GridBox gridItem={item} key={key} imgLoad={this.onImageLoaded} />
+          return <GridItem gridItem={item} key={key} imgLoad={this.onImageLoaded} />
         })}
       </article>
     )
   }
 }
 
-GridList.propTypes = {
+Grid.propTypes = {
   gridItems: PropTypes.array.isRequired
 }
 
-export default GridList
+export default Grid

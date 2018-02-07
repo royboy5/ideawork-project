@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 
 import Rotator from './home/Rotator'
-import GridList from './home/GridList'
+import Grid from './home/Grid'
 
 class Home extends Component {
   render () {
@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Rotator slides={this.props.rotator} />
-        <GridList gridItems={this.props.gridItems} />
+        <Grid gridItems={this.props.gridItems} />
       </React.Fragment>
     )
   }

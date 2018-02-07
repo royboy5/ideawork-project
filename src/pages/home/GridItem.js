@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const GridBox = (props) => {
+const GridItem = (props) => {
   return (
     <figure className='grid-item' key={props.gridItem.key}>
       <img src={props.gridItem.img} alt={'props.gridItems.title'} onLoad={props.imgLoad} />
@@ -14,11 +14,9 @@ const GridBox = (props) => {
   )
 }
 
-GridBox.propTypes = {
+GridItem.propTypes = {
   gridItem: PropTypes.object.isRequired,
   imgLoad: PropTypes.func
 }
 
-export default GridBox
-
-// TODO: README box when the box is in hovered state
+export default GridItem
