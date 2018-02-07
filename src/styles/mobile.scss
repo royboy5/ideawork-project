@@ -1,8 +1,6 @@
 /*
  * Mobile Sytles
  */
-$mobile-break: 320px;
-
 @media screen and (max-width: $mobile-break) {
   header.fixed-header {
     height: 50px;
@@ -10,10 +8,36 @@ $mobile-break: 320px;
   }
 
   header > div {
-    max-height: 50px;
+    height: 50px;
   }
 
   header img {
     width: 150px;
   }
+
+  header a.info {
+    display: none;
+  }
+
+  div.container > div .info {
+    padding: 0 10px;
+  }
+  div.rotator {
+    top: 50px;
+    margin-bottom: 5rem;
+    height: auto;
+  }
+
+  .grid-item {
+    max-width: 290px;
+  }
+
+  .grid-item > img {
+    max-width: 100%;
+  }
+
+  .grid-item .grid-item-title {
+    font-size: 2rem;
+  }
+
 }

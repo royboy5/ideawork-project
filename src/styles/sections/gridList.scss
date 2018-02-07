@@ -10,12 +10,6 @@
   width: 2%;
 }
 
-.grid-item {
-  //padding-bottom: 2rem;
-  //margin-bottom: 3rem;
-  //border-bottom: 1px solid black;
-}
-
 .grid-item > img {
   margin-bottom: 2rem;
 }
@@ -35,6 +29,9 @@
   color: #000;
   line-height: 1;
   margin-bottom: 1rem;
+  @media screen and (max-width: $mobile-break) {
+    font-size: 2rem;
+  }
 }
 
 .grid-item .grid-item-title:hover,

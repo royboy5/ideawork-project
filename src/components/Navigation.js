@@ -6,7 +6,7 @@ const Navigation = () => {
       <a href='#'><li>Home</li></a>
       <a href='#'><li>About</li></a>
       <a href='#'><li>Info</li></a>
-      <a href='#'><li>Contact</li></a>
+      <a href='#'><li>Login</li></a>
     </ul>
   )
 }
