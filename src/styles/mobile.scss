@@ -1,0 +1,19 @@
+/*
+ * Mobile Sytles
+ */
+$mobile-break: 320px;
+
+@media screen and (max-width: $mobile-break) {
+  header.fixed-header {
+    height: 50px;
+    padding: 0;
+  }
+
+  header > div {
+    max-height: 50px;
+  }
+
+  header img {
+    width: 150px;
+  }
+}
